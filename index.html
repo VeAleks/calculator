@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculate duration</title>
+	<link media="all" rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="wrapper">
+  <form action="#" class="form" id="calculateForm">
+    <fieldset>
+      <div class="row">
+        <label for="qtyElement">Number of elements</label>
+        <input id="qtyElement" type="num" placeholder="Elements">
+      </div>
+      <div class="row">
+        <p>Layout type</p>
+        <ul id="layout" class="responsive">
+           <li>
+             <input type="radio" name="radio1" id="desktopOnly">
+             <div class="cell">
+               <label for="desktopOnly"> Fixed layout </label>
+             </div>
+            </li>
+            <li>
+           <input type="radio" name="radio1" id="twoResp">
+           <div class="cell">
+             <label for="twoResp">2 Responsive Designs</label>
+           </div>
+          </li>
+          <li>
+            <input type="radio" name="radio1" id="defResp" checked>
+            <div class="cell">
+              <label for="defResp">Responsive at our discretion</label>
+            </div>
+          </li>
+           <li>
+           <input type="radio" name="radio1" id="threeResp">
+           <div class="cell">
+             <label for="threeResp">3 Responsive Designs</label>
+           </div>
+          </li>
+          <li>
+            <input type="radio" name="radio1" id="oneResp">
+            <div class="cell">
+              <label for="oneResp">1 Responsive Design</label>
+            </div>
+          </li>
+           <li>
+           <input type="radio" name="radio1" id="fourResp">
+           <div class="cell">
+             <label for="fourResp">4 Responsive Designs</label>
+           </div>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <p>Additional requirements</p>
+        <ul class="add-requirement">
+          <li>
+            <label>
+              <input type="checkbox" data-count="0.05">
+              Retina Display Optimization
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-count="0.05" disabled>
+              WCAG 2.0 / Section 508 Compliance
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-count="0.05" disabled>
+              Schema.org
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-hours="1">
+              Fonts (TypeKit, Fonts.com)
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox"  data-hours="1" >
+              Footer at Bottom
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-count="0.1">
+              Twitter Bootstrap
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-count="0.05">
+              Resizeable Fonts
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-hours="0.4">
+              Commented HTML
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-hours="0.4">
+              Commented CSS
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-hours="0.3">
+              Implement SSI Templates
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-count="0.1">
+             IE8 compatibility
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-count="0.1">
+              Print version CSS
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-count="0.3">
+              RTL
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-hours="2">
+              Markup for Wordpress theme
+            </label>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="pulse" id="btnCalc">Calculate</a>
+      <p>
+        Total (hours):
+        <strong id="result">0.00</strong>
+      </p>
+      <p>
+        Days:
+        <strong id="day">0</strong>
+      </p>
+    </fieldset>
+  </form>
+  </div>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.main.js"></script>
+</body>
+</html>
